@@ -1,0 +1,6 @@
+/* VARIABLE */ 
+LET - CAMBIA
+CONST - VALOR QUE NO CAMBIA
+-----------------------
+TIPOS DE DATOS PRIMITIVOS
+/* NUMBER */ 
