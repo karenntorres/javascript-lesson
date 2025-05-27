@@ -47,4 +47,108 @@ console.log("Hello, Pepito!");
 }
 
 /* EXERCISE 
+crear una función que reciba una palabra y si la palabra es "hola", imprimir por consola "HOLA"
 */
+
+function fn(word) {
+  if (word === "hola") {
+    console.log("HOLA");
+  } else{
+    console.log("adiós");
+  }
+}
+/*TOCA LLAMAR A LA FUNCIÓN PARA QUE IMPRIMA*/
+fn("xxx"); /* IMPRIME ADIÓS PORQUE NO CUMPLE CONDICION QUE ES LA LINEA 54*/ 
+fn("HOLA")/* IMPRIME ADIÓS PORQUE ES MAYUSCULA Y DEBE CUMPLIR LA LINEA 54*/ 
+fn("hola");
+
+// CONDICIONAL 2: switch (cambio) - estructura de control
+miVariable = 1;
+switch(miVariable){
+    case 1:
+        console.log("soy 1");
+        break;
+ case 2:
+        console.log("soy 2");
+        break;
+        default: 
+        console.log("no se cumplió ningún caso");
+        break;
+}
+// AFTER "CASE" WE ALWAYS HAVE TU PUT "BREAK"
+/*En palabras:El switch es una forma de elegir entre varias opciones según el valor de una variable. Es como una caja de interruptores: dependiendo del valor que reciba, activa una opción diferente.
+¿Cómo funciona?
+- Se evalúa el valor de una variable.
+- Se compara con varias opciones (case).
+- Cuando encuentra una coincidencia, ejecuta el código de ese caso.
+- Si no encuentra ninguna coincidencia, puede ejecutar una opción por defecto (default). */
+
+/* EXERCISE: crear una función que reciba una palabra
+- si la palabra es "hola" - imprimir por console "HOLA"
+- en caso contrario, imprima "adiós"
+- crear 2 funciones: una debe utilizar dentro "if" y la otra debe usar "switch"
+*/
+function fn1(word) {
+    if (word === "hola") {
+        console.log("HOLA");
+    } else {
+        console.log("adiós");
+    }
+}
+//SIEMPRE LLAMAR FUNCIÓN PARA QUE IMPRIMA
+fn1("hola");
+fn1("hello");
+
+function fn2(word){
+    switch (word){
+        case "hola":
+        console.log("case...HOLA");
+        break;
+
+        default:
+            console.log("case...adiós");
+            break;
+    }
+}
+//LLAMAR FUNCIÓN:
+fn2("hola");
+fn2("adiós")
+
+/*EXERCISE
+-Crear una función con 3 parámetros:
+- recibir un número
+- recibir un otro
+- reciibir una palabra
+mostrar el resultado de las operaciones aritméticas básicas
+*/
+function calcular(num1, num2, operacion) {
+  switch (operacion) {
+    case "suma":
+      console.log("Resultado de la suma:", num1 + num2);
+      break;
+    case "resta":
+      console.log("Resultado de la resta:", num1 - num2);
+      break;
+    case "multiplicacion":
+      console.log("Resultado de la multiplicación:", num1 * num2);
+      break;
+    case "division":
+      if (num2 !== 0) {
+        console.log("Resultado de la división:", num1 / num2);
+      } else {
+        console.log("Error: no se puede dividir entre cero.");
+      }
+      break;
+    default:
+      console.log("Operación no válida. Usa: suma, resta, multiplicacion o division.");
+  }
+}
+//LLLAMAR FUNCIONES:
+calcular(10, 5, "suma");            // Resultado de la suma: 15
+calcular(10, 5, "resta");           // Resultado de la resta: 5
+calcular(10, 5, "multiplicacion");  // Resultado de la multiplicación: 50
+calcular(10, 5, "division");        // Resultado de la división: 2
+calcular(10, 0, "division");        // Error: no se puede dividir entre cero
+calcular(10, 5, "raiz");            // Operación no válida
+
+
