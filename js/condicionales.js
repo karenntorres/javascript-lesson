@@ -1,4 +1,4 @@
-// CONDICIONALES - booleanos (TRUE OR FALSE)
+  // CONDICIONALES - booleanos (TRUE OR FALSE)
 
 //IF - solo imprime si lo que está en el bloque de código del IF es verdadero, si NO cumple, no va a imprimir
 
@@ -150,5 +150,23 @@ calcular(10, 5, "multiplicacion");  // Resultado de la multiplicación: 50
 calcular(10, 5, "division");        // Resultado de la división: 2
 calcular(10, 0, "division");        // Error: no se puede dividir entre cero
 calcular(10, 5, "raiz");            // Operación no válida
+
+/*LEER UN NOMBRE DE USUARIO Y UNA CONTRASEÑA
+- SI EL USUARIO ES "pepa* Y LA PW ES "ABC123" mostrar "Bienvenida"
+- DE OTRA MANERA, MOSTRAR: "Acceso denegado".
+*/
+
+function login(username, password) {
+  if (username === "pepa" && password === "ABC123") {
+    console.log("Bienvenida");
+  } else {
+    console.log("Acceso denegado");
+  }
+}
+
+// Pruebas:
+login("PEPA", "ABC123");   // Acceso denegado (por mayúscula en username)
+login("pepa", "ABC123");   // Bienvenida
+login("pepa", "abc123");   // Acceso denegado (clave incorrecta)
 
 
