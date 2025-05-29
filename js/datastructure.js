@@ -44,7 +44,55 @@ miArreglo = [
    "Sunday", // 6 - INDICE 
 ];
 
-for(let index = 0; index < 7; index++){
-console.log(miArreglo[index])
+for(let index = 0; index < miArreglo.length; index++){
+console.log("for -", miArreglo[index])
+}
+
+
+// IMPRIMIR POR CONSOLA LOS NÚMEROS DEL 1 AL 100 con WHILE
+
+let i = 0; // variable global porque está fuera de código
+
+while(i< miArreglo.length){
+   console.log("while - ", miArreglo[i]);
+   i++;
+}
+
+
+// EXAMPLE USANDO FOR
+//Imprimir en consola los primeros 5 múltiplos de 2 (es decir: 2, 4, 6, 8, 10).
+
+for (let i = 1; i <= 5; i++) {
+  console.log(i * 2);
+}
+
+// PEDIR AL USUARIO QUE ADIVINE UN NÚMERO ENTRE 1 Y 5 - DAR MAXIMO DOS INTENTO - SI EL USUARIO GANA, MOSTRAR "¡GANASTE!, ADIVINASTE EL NÚMERO SECRETO" Y SI EL USUARIO PIERDE, MOSTRAR "PERDISTE, TUVISTE DOS INTENTOS"
+
+// Número secreto entre 1 y 5
+const numeroSecreto = Math.floor(Math.random() * 5) + 1;
+
+// Contador de intentos
+let intentos = 0;
+
+// Variable para guardar la respuesta del usuario
+let respuesta;
+
+// Ciclo que se repite mientras haya intentos y no acierte
+while (intentos < 2) {
+  respuesta = prompt("Adivina un número entre 1 y 5:");
+
+  // Convertimos la respuesta a número
+  let numeroUsuario = Number(respuesta);
+
+  intentos++;
+
+  if (numeroUsuario === numeroSecreto) {
+    alert("¡GANASTE!, ADIVINASTE EL NÚMERO SECRETO");
+    break; // Salimos del ciclo porque ganó
+  }
+}
+
+if (respuesta != numeroSecreto) {
+  alert("PERDISTE, TUVISTE DOS INTENTOS");
 }
 
