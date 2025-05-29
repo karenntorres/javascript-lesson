@@ -69,6 +69,7 @@ for (let i = 1; i <= 5; i++) {
 // PEDIR AL USUARIO QUE ADIVINE UN NÚMERO ENTRE 1 Y 5 - DAR MAXIMO DOS INTENTO - SI EL USUARIO GANA, MOSTRAR "¡GANASTE!, ADIVINASTE EL NÚMERO SECRETO" Y SI EL USUARIO PIERDE, MOSTRAR "PERDISTE, TUVISTE DOS INTENTOS"
 
 // Número secreto entre 1 y 5
+/*
 const numeroSecreto = Math.floor(Math.random() * 5) + 1;
 
 // Contador de intentos
@@ -95,4 +96,4 @@ while (intentos < 2) {
 if (respuesta != numeroSecreto) {
   alert("PERDISTE, TUVISTE DOS INTENTOS");
 }
-
+*/
