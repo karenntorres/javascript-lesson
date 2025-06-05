@@ -13,7 +13,7 @@ document.write("Usted ingresó el nombre: " + entrada); //document write escribe
 alert("Usted ingresó el nombre: " + entrada);
 */
 // PEDIR AL USUARIO QUE ADIVINE UN NÚMERO ENTRE 1 Y 5 - DAR MAXIMO DOS INTENTO - SI EL USUARIO GANA, MOSTRAR "¡GANASTE!, ADIVINASTE EL NÚMERO SECRETO" Y SI EL USUARIO PIERDE, MOSTRAR "PERDISTE, TUVISTE DOS INTENTOS"
-
+/*
 const numeroSecreto = 2;
 const numeroLimiteIntentos = 2;
 let numeroIntentosUsuario = 0;
@@ -39,4 +39,4 @@ if (!adivinado) {
 }
 
 alert(mensaje);
-
+*/ 

@@ -97,3 +97,23 @@ if (respuesta != numeroSecreto) {
   alert("PERDISTE, TUVISTE DOS INTENTOS");
 }
 */
+ // OBJETO - OBJECT
+ let miObjeto = {
+  username: "pepa",
+  password: "ABC123",
+  greeting: () => {
+  console.log ("Hola");
+  },
+  fullName: {
+    firstName: "Pepita",
+    lastname: "Perez",
+  },
+  skills: ["html", "css", "js"],
+  isActive: false,
+  };
+  console.log(miObjeto);
+  console.log(miObjeto.unsername);
+  console.log(miObjeto["password"]);
+  miObjeto.greeting();
+
+  // explicación: con la anotación de punto (.) entro al objeto y subjeto
